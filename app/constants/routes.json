@@ -1,4 +1,10 @@
 {
   "HOME": "/",
-  "COUNTER": "/counter"
+  "HISTORY": "/history",
+  "CONTENT": "/content",
+  "CONTENT_HOME": "/content/",
+  "CONTENT_SHARE": "/content/share/",
+  "CONTENT_MISSING": "/content/missing/",
+  "COUNTER": "/counter",
+  "TEST": "/test"
 }
