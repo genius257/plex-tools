@@ -31,6 +31,4 @@ class Plex {
     }
 }
 
-//const db = Database('D:/Users/Frank/AppData/Local/Plex Media Server/Plug-in Support/Databases/com.plexapp.plugins.library.db', {readonly: true, fileMustExist: true, verbose: x => console.log(x)});
-
 export default Plex;
