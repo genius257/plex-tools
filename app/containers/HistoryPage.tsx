@@ -47,7 +47,7 @@ export default function HistoryPage() {
                     <br/>
                     {plex.db.prepare('SELECT * FROM devices WHERE id = ? LIMIT 1').get(row.device_id).name}
                     <br/>
-                    <img src={plex.ConvertURI(row.thumb_url, hash)} />
+                    <img width="330" src={plex.ConvertURI(row.thumb_url, hash)} />
                 </div>})}
             </div>
         </>
