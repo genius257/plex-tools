@@ -4,6 +4,7 @@ import { Switch, Route } from 'react-router-dom';
 import routes from './constants/routes.json';
 import App from './containers/App';
 import ContentPage from './containers/ContentPage';
+import ErrorPage from './containers/ErrorPage';
 import HistoryPage from './containers/HistoryPage';
 import HomePage from './containers/HomePage';
 import TestPage from './containers/TestPage';
@@ -27,6 +28,7 @@ export default function Routes() {
         <Route path={routes.TEST} component={TestPage} />
         <Route path={routes.HISTORY} component={HistoryPage} />
         <Route path={routes.CONTENT} component={ContentPage} />
+        <Route path={routes.ERRORS} component={ErrorPage} />
         <Route path={routes.HOME} component={HomePage} />
       </Switch>
     </App>

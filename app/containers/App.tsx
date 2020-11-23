@@ -37,6 +37,12 @@ export default function App(props: Props) {
             <div>Content</div>
           </NavLink>
         </div>
+        <div className={styles.sidebarLink}>
+          <NavLink className={styles.sourceLink} activeClassName={styles.active} to={routes.ERRORS}>
+            <div className={styles.iconContainer}><i className="fa fa-exclamation-triangle" /></div>
+            <div>Errors</div>
+          </NavLink>
+        </div>
       </div>
       <div className={styles.page}>
         {children}

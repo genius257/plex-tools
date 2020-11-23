@@ -5,6 +5,7 @@
   "CONTENT_HOME": "/content/",
   "CONTENT_SHARE": "/content/share/",
   "CONTENT_MISSING": "/content/missing/",
+  "ERRORS": "/errors",
   "COUNTER": "/counter",
   "TEST": "/test"
 }
