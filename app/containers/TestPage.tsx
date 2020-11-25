@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './TestPage.css';
+
 const Database = require('better-sqlite3');
 
 export default function TestPage(): JSX.Element {
@@ -11,18 +12,13 @@ export default function TestPage(): JSX.Element {
     console.log(rows);
     //db.close();
     */
-    return (
-      <div data-tid="container" className={[styles.container].join(' ')}>
-        <div className={styles.sidebar}>
-          History
-          Content (missing)
-        </div>
-        <div className={styles.page}>
-          <div className={[styles.page, styles.header].join(' ')}>
-            test
-          </div>
-          <div className={[styles.page, styles.content].join(' ')}>test</div>
-        </div>
+  return (
+    <div data-tid="container" className={[styles.container].join(' ')}>
+      <div className={styles.sidebar}>History Content (missing)</div>
+      <div className={styles.page}>
+        <div className={[styles.page, styles.header].join(' ')}>test</div>
+        <div className={[styles.page, styles.content].join(' ')}>test</div>
       </div>
-    );
-  }
+    </div>
+  );
+}
