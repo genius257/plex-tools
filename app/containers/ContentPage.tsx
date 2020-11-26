@@ -1,7 +1,6 @@
 import React from 'react';
 import { NavLink, Switch, Route } from 'react-router-dom';
 import styles from './TestPage.css';
-import plex from '../utils/plex';
 import routes from '../constants/routes.json';
 import HomePage from './content/HomePage';
 import SharePage from './content/SharePage';

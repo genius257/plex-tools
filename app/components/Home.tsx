@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 import routes from '../constants/routes.json';
 import styles from './Home.css';
 
-const fs = require('fs');
-const Database = require('better-sqlite3');
+// const fs = require('fs');
+// const Database = require('better-sqlite3');
 
 export default function Home(): JSX.Element {
   return (
@@ -13,9 +13,9 @@ export default function Home(): JSX.Element {
       <h2>Node: {process.versions.node}</h2>
       <button
         type="button"
-        onClick={(e) =>
+        /* onClick={(e) =>
           console.log(fs.readFileSync('D:\\Desktop\\ytdl.txt').toString())
-        }
+        } */
       >
         XYZ
       </button>

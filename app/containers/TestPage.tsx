@@ -1,10 +1,7 @@
 import React from 'react';
 import styles from './TestPage.css';
 
-const Database = require('better-sqlite3');
-
 export default function TestPage(): JSX.Element {
-  console.log(styles);
   /*
     const db = Database('D:/Users/Frank/AppData/Local/Plex Media Server/Plug-in Support/Databases/com.plexapp.plugins.library.db', {readonly: true, fileMustExist: true, verbose: x => console.log(x)})
     let userId = 1;

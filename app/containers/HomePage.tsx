@@ -1,16 +1,7 @@
 import React from 'react';
-import { Link, NavLink, Switch, Route } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import styles from './TestPage.css';
-import plex from '../utils/plex';
-import Home from '../components/Home';
 import routes from '../constants/routes.json';
-
-const Database = require('better-sqlite3');
-
-plex.db = Database(
-  'D:/Users/Frank/AppData/Local/Plex Media Server/Plug-in Support/Databases/com.plexapp.plugins.library.db',
-  { readonly: true, fileMustExist: true, verbose: (x: any) => console.log(x) }
-);
 
 export default function HomePage() {
   // return <Home />;

@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react';
-import { Link, NavLink, Switch, Route } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import styles from './TestPage.css';
 import plex from '../utils/plex';
 import routes from '../constants/routes.json';
@@ -16,6 +16,7 @@ plex.db = Database(
   {
     readonly: true,
     fileMustExist: true,
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any, no-console
     verbose: (x: any) => console.log(x),
   }
 );

@@ -2,9 +2,19 @@ const fs = require('fs');
 const Database = require('better-sqlite3');
 
 class Plex {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   static db: any = null;
 
   static dataDirectoryPath = '';
+
+  static Connect(sFile: string, bVerbose = false) {
+    this.db = new Database(sFile, {
+      readonly: true,
+      fileMustExist: true,
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any, no-console
+      verbose: bVerbose ? (x: any) => console.log(x) : null,
+    });
+  }
 
   static ConvertURI(URI: string, strHash: string) {
     let URI2 = URI;
