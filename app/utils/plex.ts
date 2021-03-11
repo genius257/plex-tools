@@ -42,7 +42,7 @@ class Plex {
     }
 
     if (!fs.existsSync(this.dataDirectoryPath + URI2)) {
-      URI2 = URI.replace('/Movies/', '/TV Shows/');
+      URI2 = URI2.replace('/Movies/', '/TV Shows/');
     }
     return this.dataDirectoryPath + URI2;
   }
